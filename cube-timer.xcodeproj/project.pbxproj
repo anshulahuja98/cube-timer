@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3DD48361226DB0AD0059E9B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD48360226DB0AD0059E9B8 /* AppDelegate.swift */; };
+		3DD48363226DB0AD0059E9B8 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD48362226DB0AD0059E9B8 /* FirstViewController.swift */; };
+		3DD48365226DB0AD0059E9B8 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD48364226DB0AD0059E9B8 /* SecondViewController.swift */; };
+		3DD48368226DB0AD0059E9B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DD48366226DB0AD0059E9B8 /* Main.storyboard */; };
+		3DD4836A226DB0AF0059E9B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DD48369226DB0AF0059E9B8 /* Assets.xcassets */; };
+		3DD4836D226DB0AF0059E9B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DD4836B226DB0AF0059E9B8 /* LaunchScreen.storyboard */; };
+		3DD48378226DB0AF0059E9B8 /* cube_timerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD48377226DB0AF0059E9B8 /* cube_timerTests.swift */; };
+		3DD48383226DB0AF0059E9B8 /* cube_timerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD48382226DB0AF0059E9B8 /* cube_timerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3DD48374226DB0AF0059E9B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DD48355226DB0AD0059E9B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DD4835C226DB0AD0059E9B8;
+			remoteInfo = "cube-timer";
+		};
+		3DD4837F226DB0AF0059E9B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DD48355226DB0AD0059E9B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DD4835C226DB0AD0059E9B8;
+			remoteInfo = "cube-timer";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3DD4835D226DB0AD0059E9B8 /* cube-timer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cube-timer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DD48360226DB0AD0059E9B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3DD48362226DB0AD0059E9B8 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		3DD48364226DB0AD0059E9B8 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		3DD48367226DB0AD0059E9B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3DD48369226DB0AF0059E9B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3DD4836C226DB0AF0059E9B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3DD4836E226DB0AF0059E9B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DD48373226DB0AF0059E9B8 /* cube-timerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "cube-timerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DD48377226DB0AF0059E9B8 /* cube_timerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cube_timerTests.swift; sourceTree = "<group>"; };
+		3DD48379226DB0AF0059E9B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DD4837E226DB0AF0059E9B8 /* cube-timerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "cube-timerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DD48382226DB0AF0059E9B8 /* cube_timerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cube_timerUITests.swift; sourceTree = "<group>"; };
+		3DD48384226DB0AF0059E9B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DD4835A226DB0AD0059E9B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DD48370226DB0AF0059E9B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DD4837B226DB0AF0059E9B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DD48354226DB0AD0059E9B8 = {
+			isa = PBXGroup;
+			children = (
+				3DD4835F226DB0AD0059E9B8 /* cube-timer */,
+				3DD48376226DB0AF0059E9B8 /* cube-timerTests */,
+				3DD48381226DB0AF0059E9B8 /* cube-timerUITests */,
+				3DD4835E226DB0AD0059E9B8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3DD4835E226DB0AD0059E9B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DD4835D226DB0AD0059E9B8 /* cube-timer.app */,
+				3DD48373226DB0AF0059E9B8 /* cube-timerTests.xctest */,
+				3DD4837E226DB0AF0059E9B8 /* cube-timerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DD4835F226DB0AD0059E9B8 /* cube-timer */ = {
+			isa = PBXGroup;
+			children = (
+				3DD48360226DB0AD0059E9B8 /* AppDelegate.swift */,
+				3DD48362226DB0AD0059E9B8 /* FirstViewController.swift */,
+				3DD48364226DB0AD0059E9B8 /* SecondViewController.swift */,
+				3DD48366226DB0AD0059E9B8 /* Main.storyboard */,
+				3DD48369226DB0AF0059E9B8 /* Assets.xcassets */,
+				3DD4836B226DB0AF0059E9B8 /* LaunchScreen.storyboard */,
+				3DD4836E226DB0AF0059E9B8 /* Info.plist */,
+			);
+			path = "cube-timer";
+			sourceTree = "<group>";
+		};
+		3DD48376226DB0AF0059E9B8 /* cube-timerTests */ = {
+			isa = PBXGroup;
+			children = (
+				3DD48377226DB0AF0059E9B8 /* cube_timerTests.swift */,
+				3DD48379226DB0AF0059E9B8 /* Info.plist */,
+			);
+			path = "cube-timerTests";
+			sourceTree = "<group>";
+		};
+		3DD48381226DB0AF0059E9B8 /* cube-timerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3DD48382226DB0AF0059E9B8 /* cube_timerUITests.swift */,
+				3DD48384226DB0AF0059E9B8 /* Info.plist */,
+			);
+			path = "cube-timerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3DD4835C226DB0AD0059E9B8 /* cube-timer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DD48387226DB0AF0059E9B8 /* Build configuration list for PBXNativeTarget "cube-timer" */;
+			buildPhases = (
+				3DD48359226DB0AD0059E9B8 /* Sources */,
+				3DD4835A226DB0AD0059E9B8 /* Frameworks */,
+				3DD4835B226DB0AD0059E9B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "cube-timer";
+			productName = "cube-timer";
+			productReference = 3DD4835D226DB0AD0059E9B8 /* cube-timer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3DD48372226DB0AF0059E9B8 /* cube-timerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DD4838A226DB0AF0059E9B8 /* Build configuration list for PBXNativeTarget "cube-timerTests" */;
+			buildPhases = (
+				3DD4836F226DB0AF0059E9B8 /* Sources */,
+				3DD48370226DB0AF0059E9B8 /* Frameworks */,
+				3DD48371226DB0AF0059E9B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DD48375226DB0AF0059E9B8 /* PBXTargetDependency */,
+			);
+			name = "cube-timerTests";
+			productName = "cube-timerTests";
+			productReference = 3DD48373226DB0AF0059E9B8 /* cube-timerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3DD4837D226DB0AF0059E9B8 /* cube-timerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DD4838D226DB0AF0059E9B8 /* Build configuration list for PBXNativeTarget "cube-timerUITests" */;
+			buildPhases = (
+				3DD4837A226DB0AF0059E9B8 /* Sources */,
+				3DD4837B226DB0AF0059E9B8 /* Frameworks */,
+				3DD4837C226DB0AF0059E9B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DD48380226DB0AF0059E9B8 /* PBXTargetDependency */,
+			);
+			name = "cube-timerUITests";
+			productName = "cube-timerUITests";
+			productReference = 3DD4837E226DB0AF0059E9B8 /* cube-timerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DD48355226DB0AD0059E9B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Anshul Ahuja";
+				TargetAttributes = {
+					3DD4835C226DB0AD0059E9B8 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					3DD48372226DB0AF0059E9B8 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 3DD4835C226DB0AD0059E9B8;
+					};
+					3DD4837D226DB0AF0059E9B8 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 3DD4835C226DB0AD0059E9B8;
+					};
+				};
+			};
+			buildConfigurationList = 3DD48358226DB0AD0059E9B8 /* Build configuration list for PBXProject "cube-timer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3DD48354226DB0AD0059E9B8;
+			productRefGroup = 3DD4835E226DB0AD0059E9B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DD4835C226DB0AD0059E9B8 /* cube-timer */,
+				3DD48372226DB0AF0059E9B8 /* cube-timerTests */,
+				3DD4837D226DB0AF0059E9B8 /* cube-timerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DD4835B226DB0AD0059E9B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DD4836D226DB0AF0059E9B8 /* LaunchScreen.storyboard in Resources */,
+				3DD4836A226DB0AF0059E9B8 /* Assets.xcassets in Resources */,
+				3DD48368226DB0AD0059E9B8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DD48371226DB0AF0059E9B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DD4837C226DB0AF0059E9B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DD48359226DB0AD0059E9B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DD48365226DB0AD0059E9B8 /* SecondViewController.swift in Sources */,
+				3DD48361226DB0AD0059E9B8 /* AppDelegate.swift in Sources */,
+				3DD48363226DB0AD0059E9B8 /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DD4836F226DB0AF0059E9B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DD48378226DB0AF0059E9B8 /* cube_timerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DD4837A226DB0AF0059E9B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DD48383226DB0AF0059E9B8 /* cube_timerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3DD48375226DB0AF0059E9B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DD4835C226DB0AD0059E9B8 /* cube-timer */;
+			targetProxy = 3DD48374226DB0AF0059E9B8 /* PBXContainerItemProxy */;
+		};
+		3DD48380226DB0AF0059E9B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DD4835C226DB0AD0059E9B8 /* cube-timer */;
+			targetProxy = 3DD4837F226DB0AF0059E9B8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3DD48366226DB0AD0059E9B8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DD48367226DB0AD0059E9B8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3DD4836B226DB0AF0059E9B8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DD4836C226DB0AF0059E9B8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3DD48385226DB0AF0059E9B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3DD48386226DB0AF0059E9B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3DD48388226DB0AF0059E9B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "cube-timer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "anshul-ahuja.cube-timer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3DD48389226DB0AF0059E9B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "cube-timer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "anshul-ahuja.cube-timer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3DD4838B226DB0AF0059E9B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "cube-timerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "anshul-ahuja.cube-timerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cube-timer.app/cube-timer";
+			};
+			name = Debug;
+		};
+		3DD4838C226DB0AF0059E9B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "cube-timerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "anshul-ahuja.cube-timerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cube-timer.app/cube-timer";
+			};
+			name = Release;
+		};
+		3DD4838E226DB0AF0059E9B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "cube-timerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "anshul-ahuja.cube-timerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "cube-timer";
+			};
+			name = Debug;
+		};
+		3DD4838F226DB0AF0059E9B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "cube-timerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "anshul-ahuja.cube-timerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "cube-timer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DD48358226DB0AD0059E9B8 /* Build configuration list for PBXProject "cube-timer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DD48385226DB0AF0059E9B8 /* Debug */,
+				3DD48386226DB0AF0059E9B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DD48387226DB0AF0059E9B8 /* Build configuration list for PBXNativeTarget "cube-timer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DD48388226DB0AF0059E9B8 /* Debug */,
+				3DD48389226DB0AF0059E9B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DD4838A226DB0AF0059E9B8 /* Build configuration list for PBXNativeTarget "cube-timerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DD4838B226DB0AF0059E9B8 /* Debug */,
+				3DD4838C226DB0AF0059E9B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DD4838D226DB0AF0059E9B8 /* Build configuration list for PBXNativeTarget "cube-timerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DD4838E226DB0AF0059E9B8 /* Debug */,
+				3DD4838F226DB0AF0059E9B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3DD48355226DB0AD0059E9B8 /* Project object */;
+}
