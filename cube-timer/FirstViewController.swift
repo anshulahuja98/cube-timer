@@ -9,12 +9,12 @@
 import UIKit
 
 class FirstViewController: UIViewController {
-
-//    Button variables
+    
+    //    Button variables
     var left_button:Bool = false
     var right_button:Bool = false
     
-//    Timer variables
+    //    Timer variables
     @IBOutlet weak var timer_label: UILabel!
     var timer_status:Bool = false
     var timer = Timer()
@@ -42,7 +42,28 @@ class FirstViewController: UIViewController {
     @objc
     func update_timer() {
         counter = counter + 0.01
-        timer_label.text = String(format: "%.2f", counter)
+        timer_label.text = get_time()
+    }
+    
+    func get_time() -> String {
+        let milli_seconds:Int = Int((counter - floor(counter))*100)
+        let total_seconds:Int = Int(counter)
+        let seconds:Int = total_seconds%60
+        let minutes:Int = (total_seconds/60)%60
+        let hours:Int = total_seconds/360
+        if (minutes == 0 ){
+            return String(format: "%d:%d", seconds, milli_seconds)
+        }
+        else if (hours == 0){
+            return String(format: "%d:%d:%d", minutes, seconds, milli_seconds)
+        }
+        else if (hours > 6){
+            return "NaN"
+        }
+        else{
+            return String(format: "%d:%d:%d:%d",hours, minutes, seconds, milli_seconds)
+        }
+        
     }
     
     
@@ -69,9 +90,9 @@ class FirstViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        timer_label.text = String(counter)
+        timer_label.text = get_time()
     }
-
-
+    
+    
 }
 
