@@ -10,18 +10,24 @@ import UIKit
 
 class FirstViewController: UIViewController {
 
-    @IBOutlet weak var timer: UILabel!
-    @IBOutlet weak var trigger_checker: UILabel!
+    @IBOutlet weak var timer_label: UILabel!
     var left_button:Bool = false
     var right_button:Bool = false
     var timer_status = false
     
+    
+    var isStart = false
+    var timer = Timer()
+    var counter = 0.00
+    
     func toggle_timer(){
         if(timer_status){
-            stop_timer()
+            timer.invalidate()
+            timer_status = false
         }
         else{
-            start_timer()
+            timer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(FirstViewController.updateTimer), userInfo: nil, repeats: true)
+            timer_status = true
         }
         
     }
@@ -30,6 +36,12 @@ class FirstViewController: UIViewController {
     }
     func start_timer(){
         timer_status = true
+    }
+    
+    @objc
+    func updateTimer() {
+        counter = counter + 0.01
+        timer_label.text = String(format: "%.2f", counter)
     }
     
     
