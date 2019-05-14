@@ -10,13 +10,13 @@ import UIKit
 
 class FirstViewController: UIViewController {
 
-    @IBOutlet weak var timer_label: UILabel!
+//    Button variables
     var left_button:Bool = false
     var right_button:Bool = false
-    var timer_status = false
     
-    
-    var isStart = false
+//    Timer variables
+    @IBOutlet weak var timer_label: UILabel!
+    var timer_status:Bool = false
     var timer = Timer()
     var counter = 0.00
     
@@ -24,9 +24,10 @@ class FirstViewController: UIViewController {
         if(timer_status){
             timer.invalidate()
             timer_status = false
+            counter = 0.00
         }
         else{
-            timer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(FirstViewController.updateTimer), userInfo: nil, repeats: true)
+            timer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(FirstViewController.update_timer), userInfo: nil, repeats: true)
             timer_status = true
         }
         
@@ -39,7 +40,7 @@ class FirstViewController: UIViewController {
     }
     
     @objc
-    func updateTimer() {
+    func update_timer() {
         counter = counter + 0.01
         timer_label.text = String(format: "%.2f", counter)
     }
@@ -66,10 +67,9 @@ class FirstViewController: UIViewController {
         left_button = false
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        timer_label.text = String(counter)
     }
 
 
