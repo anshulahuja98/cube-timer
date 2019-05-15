@@ -4,7 +4,7 @@ target 'cube-timer' do
   use_frameworks!
 
   # Pods for cube-timer
-  
+  pod "GCDWebServer", "~> 3.0"
   target 'cube-timerTests' do
     inherit! :search_paths
     # Pods for testing
