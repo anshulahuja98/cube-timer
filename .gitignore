@@ -1,0 +1,5 @@
+*.xcworkspace/
+*.xcodeproj/
+
+Podfile.lock
+pods/
