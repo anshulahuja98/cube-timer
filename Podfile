@@ -5,6 +5,7 @@ target 'cube-timer' do
 
   # Pods for cube-timer
   pod "GCDWebServer", "~> 3.0"
+  pod 'SQLite.swift', '~> 0.12.0'
   target 'cube-timerTests' do
     inherit! :search_paths
     # Pods for testing
