@@ -56,6 +56,16 @@ class FirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         init_web_server()
+        let db = TimeDB.sharedInstance
+        
+        do {
+            try db.create_tables()
+            
+        } catch _ {
+            // WIP
+        }
+        
+        print("Finish")
     }
 }
 
