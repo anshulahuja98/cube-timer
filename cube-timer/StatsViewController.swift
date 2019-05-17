@@ -12,7 +12,14 @@ class StatsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let db = TimeDB.sharedInstance
+        
+        do {
+            try db.create_tables()
+            
+        } catch _ {
+            // WIP
+        }
     }
 
 
