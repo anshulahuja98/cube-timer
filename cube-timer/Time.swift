@@ -7,6 +7,47 @@
 //
 
 import Foundation
+import SQLite
+
+class TimeDataHelper{
+    static let TABLE_NAME = "time_record"
+    
+    static let table = Table(TABLE_NAME)
+    static let id = Expression<Int64>("id")
+    static let counter = Expression<Double>("counter")
+    
+    static   func create_time_table() {
+        let db = TimeDB.sharedInstance.db
+        do {
+            let _ = try db!.run( table.create(ifNotExists: true) {t in
+                t.column(id, primaryKey: .autoincrement)
+                t.column(counter)
+            })
+            
+        } catch _ {
+            // Error throw if table already exists
+        }
+    }
+    static func insert_time(time:Time){
+        let db = TimeDB.sharedInstance.db
+        do {
+            try db!.run(table.insert(counter <- time.counter))
+        } catch _ {
+            // Error throw if table already exists
+        }
+    }
+    static func get_time() -> Time{
+        let db = TimeDB.sharedInstance.db
+        do {
+            let all = Array(try db!.prepare(table))
+            print(all)
+            
+        } catch _ {
+            // Error throw if table already exists
+        }
+        return Time(counter: 0.00)
+    }
+}
 
 class Time{
     var timer_status:Bool
