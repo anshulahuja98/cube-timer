@@ -11,11 +11,11 @@ import Foundation
 class Time{
     var timer_status:Bool
     var timer:Timer!
-    var counter:Float
-    init() {
+    var counter:Double
+    init(counter:Double = 0.00) {
         timer_status=false
         timer = Timer()
-        counter = 0.00
+        self.counter = counter
     }
     
     func stop_timer(){
