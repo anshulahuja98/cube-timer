@@ -19,7 +19,7 @@ class FirstViewController: UIViewController {
     
     func toggle_timer(){
         if(time.timer_status){
-            time.stop_timer()
+            time.stop_timer(time_obj:time)
         }
         else{
             time.start_timer()

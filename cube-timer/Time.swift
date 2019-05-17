@@ -59,9 +59,10 @@ class Time{
         self.counter = counter
     }
     
-    func stop_timer(){
+    func stop_timer(time_obj:Time){
         timer.invalidate()
         timer_status = false
+        TimeDataHelper.insert_time(time: time_obj)
         counter = 0.00
     }
     func start_timer(){
