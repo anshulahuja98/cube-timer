@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class TimerViewController: UIViewController {
     //    Button variables
     var left_button:Bool = false
     var right_button:Bool = false
@@ -23,7 +23,7 @@ class FirstViewController: UIViewController {
         }
         else{
             time.start_timer()
-            time.timer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(FirstViewController.update_timer), userInfo: nil, repeats: true)
+            time.timer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(TimerViewController.update_timer), userInfo: nil, repeats: true)
         }
         
     }
